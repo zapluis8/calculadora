@@ -10,11 +10,6 @@ typedef struct {
     int **datos;
 } Matriz;
 
-typedef struct {
-    int profundidad; // número de matrices en el tensor
-    Matriz **capas;
-} Tensor;
-
 // Funciones para matrices
 Matriz* crearMatriz(int filas, int columnas);
 void liberarMatriz(Matriz* m);
@@ -23,10 +18,5 @@ Matriz* sumaMatriz(Matriz* m1, Matriz* m2);
 Matriz* restaMatriz(Matriz* m1, Matriz* m2);
 Matriz* multiplicarMatriz(Matriz* m1, Matriz* m2);
 int esCuadrada(Matriz* m);
-
-// Funciones para tensores
-Tensor* crearTensor(int profundidad, int filas, int columnas);
-void liberarTensor(Tensor* t);
-void imprimirTensor(Tensor* t);
 
 #endif
