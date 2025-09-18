@@ -22,7 +22,6 @@ void imprimirMatriz(Matriz* m);
 Matriz* sumaMatriz(Matriz* m1, Matriz* m2);
 Matriz* restaMatriz(Matriz* m1, Matriz* m2);
 Matriz* multiplicarMatriz(Matriz* m1, Matriz* m2);
-Matriz* transpuestaMatriz(Matriz* m);
 int esCuadrada(Matriz* m);
 
 // Funciones para tensores
