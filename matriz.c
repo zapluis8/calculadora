@@ -2,15 +2,16 @@
 
 // Crear matriz dinámica nxm
 Matriz* crearMatriz(int filas, int columnas) {
-    Matriz* m = (Matriz*)malloc(sizeof(Matriz));
-    m->filas = filas;
-    m->columnas = columnas;
+    Matriz* m = (Matriz*)malloc(sizeof(Matriz)); // Reservar memoria para la estructura
+    m->filas = filas;      // Guardar número de filas
+    m->columnas = columnas; // Guardar número de columnas
 
+    // Reservar memoria para cada fila
     m->datos = (int**)malloc(filas * sizeof(int*));
-    for(int i=0;i<filas;i++)
-        m->datos[i] = (int*)malloc(columnas * sizeof(int));
+    for(int i = 0; i < filas; i++)
+        m->datos[i] = (int*)malloc(columnas * sizeof(int)); // Cada fila tiene 'columnas' elementos
 
-    return m;
+    return m; // Devolver puntero a la matriz
 }
 
 // Liberar memoria matriz
