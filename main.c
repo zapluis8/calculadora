@@ -25,9 +25,6 @@ int main() {
     Matriz* mult = multiplicarMatriz(m1,m2);
     printf("Multiplicación:\n"); imprimirMatriz(mult);
 
-    Matriz* trans = transpuestaMatriz(m1);
-    printf("Transpuesta de Matriz 1:\n"); imprimirMatriz(trans);
-
     printf("¿Matriz 1 es cuadrada? %s\n", esCuadrada(m1) ? "Sí":"No");
 
     // Crear tensor 2x2x2
