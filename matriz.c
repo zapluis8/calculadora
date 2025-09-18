@@ -72,15 +72,6 @@ Matriz* multiplicarMatriz(Matriz* m1,Matriz* m2){
     return res;
 }
 
-// Transpuesta
-Matriz* transpuestaMatriz(Matriz* m){
-    Matriz* res = crearMatriz(m->columnas,m->filas);
-    for(int i=0;i<m->filas;i++)
-        for(int j=0;j<m->columnas;j++)
-            res->datos[j][i] = m->datos[i][j];
-    return res;
-}
-
 // Cuadrada
 int esCuadrada(Matriz* m){
     return m->filas==m->columnas;
