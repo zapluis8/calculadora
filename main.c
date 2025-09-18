@@ -1,4 +1,5 @@
 #include "matriz.h"
+#include "tensor.h"
 
 int main() {
     // Crear matrices 2x2
